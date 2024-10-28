@@ -46,7 +46,7 @@ def admin():
     return redirect(url_for('home'))
 
 app.run(
-    # host = '0.0.0.0',
-    # port = 5000,
+    host = '0.0.0.0',
+    port = 5000,
     # debug = True,
 )
