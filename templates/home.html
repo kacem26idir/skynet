@@ -1,0 +1,79 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<div class="container">
+    <!-- <div class="home-cover">
+        <h1 class="text-center text-light p-3">SKYNET</h1>
+    </div> -->
+    <div class="bg-dark">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="#">
+                        <img class="img-carousel" src="{{url_for('static', filename='img/ad01.png')}}"
+                            alt="First slide">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#">
+                        <img class="img-carousel" src="{{url_for('static', filename='img/ad01.png')}}"
+                            alt="Second slide">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#">
+                        <img class="img-carousel" src="{{url_for('static', filename='img/ad01.png')}}"
+                            alt="Third slide">
+                    </a>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm d-flex justify-content-center">
+            <div class="card my-3" style="width: 18rem;">
+                <div class="card-body">
+                    <img src="{{url_for('static', filename='img/DSC_0564.jpg')}}" class="card-img-top rounded-circle">
+                    <h3 class="card-title text-center">Abderrahim IDIR</h3>
+                    <p class="card-text text-justify">
+                        Physicist and renewable energies engineer.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm d-flex justify-content-center">
+            <div class="card my-3 m" style="width: 18rem;">
+                <div class="card-body">
+                    <img src="{{url_for('static', filename='img/avatar.png')}}" class="card-img-top rounded-circle">
+                    <h3 class="card-tite text-center">Profile 02</h3>
+                    <p class="card-text text-justify">You can write here your bio or description to present yourself to
+                        people.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm d-flex justify-content-center">
+            <div class="card my-3 m" style="width: 18rem;">
+                <div class="card-body">
+                    <img src="{{url_for('static', filename='img/avatar.png')}}" class="card-img-top rounded-circle">
+                    <h3 class="card-tite text-center">Profile 03</h3>
+                    <p class="card-text text-justify">Depending on your work with us you will be classified here with the
+                        top three.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

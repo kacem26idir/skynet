@@ -1,0 +1,11 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<div class="container">
+    <form action="/api/post-data" method="post" class="py-3 mx-auto form-api">
+        <input type="number" name="temperature" placeholder="Temperature" step=".01">
+        <input type="number" name="humidity" placeholder="Humidity" step=".01">
+        <input type="submit" value="Add" class="btn btn-primary">
+    </form>
+</div>
+{% endblock %}
