@@ -24,6 +24,10 @@ def projects():
         title = 'Projects',
     )
 
+@app.route('/profile/<member>')
+def profile(member):
+    return f'this member identification is : {member}'
+
 @app.route('/api')
 def api():
     return render_template(

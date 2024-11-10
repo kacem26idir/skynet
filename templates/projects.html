@@ -3,5 +3,43 @@
 {% block content %}
 <div class="container">
     <h1>Projects page</h1>
+    <h2><i class="fa fa-cloud"></i> IoT</h2>
+    <div class="row justify-content-around">
+        <div class="col-4-sm mb-3">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img src="{{url_for('static', filename='img/skynet.png')}}" alt="skynet" class="card-image" style="aspect-ratio: 1; object-fit: cover;">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Card</h3>
+                    <p class="card-text text-justify">Text</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2><i class="fa fa-sun-o"></i> Photovoltaic</h2>
+    <div class="row justify-content-around">
+        <div class="col-4-sm mb-3">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img src="{{url_for('static', filename='img/skynet.png')}}" alt="skynet" class="card-image" style="aspect-ratio: 1; object-fit: cover;">
+
+                <div class="card-body">
+                    <h3 class="card-title text-center">Card</h3>
+                    <p class="card-text text-justify">Text</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-4-sm mb-3">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img src="{{url_for('static', filename='img/skynet.png')}}" alt="skynet" class="card-image" style="aspect-ratio: 1; object-fit: cover;">
+
+                <div class="card-body">
+                    <h3 class="card-title text-center">Card</h3>
+                    <p class="card-text text-justify">Text</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2><i class="fa fa-microchip"></i> Instrumentation</h2>
+    <div class="row justify-content-around">
+    </div>
 </div>
 {% endblock %}
